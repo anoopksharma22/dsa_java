@@ -3,6 +3,9 @@ package binaryTree.depthFirstSearch;
 import binaryTree.ClassicBTreeGenerator;
 import binaryTree.Node;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecursiveDepthFirstSearch {
     public static void main(String[] args) {
         Node<String> btree = ClassicBTreeGenerator.getClassicBTree();
@@ -16,18 +19,19 @@ public class RecursiveDepthFirstSearch {
          */
 
         // Output should be: A B D E C F
-        depthFirstSearch(btree);
+        List<String> result = new ArrayList<>();
+        depthFirstSearch(btree, result);
+        System.out.println(result);
     }
 
-    public static void depthFirstSearch(Node<String> root){
+    public static List<String> depthFirstSearch(Node<String> root, List<String> res){
         if( root == null){
-            return;
+            return List.of();
         }
-        else {
-            System.out.print(root.val + " ");
-        }
-        depthFirstSearch(root.left);
-        depthFirstSearch(root.right);
+        res.add(root.val);
+        depthFirstSearch(root.left, res);
+        depthFirstSearch(root.right, res);
+        return res;
     }
 }
 
