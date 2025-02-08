@@ -18,6 +18,12 @@ public class MaxRootToLeafPathSum {
         b.right = e;
         c.right = f;
 
+        //       3
+        //    /    \
+        //   11     4
+        //  / \      \
+        // 4   -2     1
+
         Double sum = maxPathSum(a);
         System.out.println(sum);
     }
