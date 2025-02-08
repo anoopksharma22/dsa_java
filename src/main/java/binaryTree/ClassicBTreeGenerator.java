@@ -5,8 +5,8 @@ package binaryTree;
  *     (A)
  *     / \
  *   (B) (C)
- *   / \
- * (E) (F)
+ *   / \   \
+ * (D) (E)  (F)
  *
  */
 
@@ -30,4 +30,6 @@ public class ClassicBTreeGenerator {
         c.left = f;
         return a;
     }
+
+
 }

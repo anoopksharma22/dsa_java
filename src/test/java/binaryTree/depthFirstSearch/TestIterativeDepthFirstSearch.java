@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestDepthFirstSearchIterative {
+class TestIterativeDepthFirstSearch {
 
     @Test
     void depthFirstSearch1() {
@@ -24,7 +24,7 @@ class TestDepthFirstSearchIterative {
         b.right = e;
         c.right = f;
 
-        List<String> res = DepthFirstSearchIterative.depthFirstSearch(a);
+        List<String> res = IterativeDepthFirstSearch.depthFirstSearch(a);
         assertEquals(res, List.of("a", "b", "d", "e", "c", "f"));
     }
     @Test
@@ -44,7 +44,7 @@ class TestDepthFirstSearchIterative {
         c.right = f;
         e.left = g;
 
-        List<String> res = DepthFirstSearchIterative.depthFirstSearch(a);
+        List<String> res = IterativeDepthFirstSearch.depthFirstSearch(a);
         assertEquals(res, List.of("a", "b", "d", "e", "g", "c", "f"));
     }
 
@@ -61,19 +61,19 @@ class TestDepthFirstSearchIterative {
         c.right = d;
         d.right = e;
 
-        List<String> res = DepthFirstSearchIterative.depthFirstSearch(a);
+        List<String> res = IterativeDepthFirstSearch.depthFirstSearch(a);
         assertEquals(res, List.of("a", "b", "c", "d", "e"));
     }
 
     @Test
     void depthFirstSearch4() {
-        List<String> res = DepthFirstSearchIterative.depthFirstSearch(null);
+        List<String> res = IterativeDepthFirstSearch.depthFirstSearch(null);
         assertEquals(res, List.of());
     }
     @Test
     void depthFirstSearch5() {
         Node<String> a = new Node<>("a");
-        List<String> res = DepthFirstSearchIterative.depthFirstSearch(a);
+        List<String> res = IterativeDepthFirstSearch.depthFirstSearch(a);
         assertEquals(res, List.of("a"));
     }
 }
