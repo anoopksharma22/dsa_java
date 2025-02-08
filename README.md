@@ -8,7 +8,7 @@
 Each topic is organised in a package.
 * Package contains:
   * class with main method.
-  * read me file if concept or problem is not seld explanatory.
+  * read me file if concept or problem statement with approach and steps to solve the problem.
 * Simply run the main method to see the result.
 
 You will also find generic notes in the resource directory.
