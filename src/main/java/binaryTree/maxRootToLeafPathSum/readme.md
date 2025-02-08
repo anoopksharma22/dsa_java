@@ -22,7 +22,7 @@ Best way to solve this problem is `Recursive approach`
   * right chile is null
   * so return self value
 * Node is null
-  * return the max min value, in case if Java: `Double.NEGATIVE_INFINITY`
+  * return the max min value, in case of Java: `Double.NEGATIVE_INFINITY`
 
 ### Logic:
 * Add the current node value with max of chile node values.
