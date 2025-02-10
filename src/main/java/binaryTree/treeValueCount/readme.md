@@ -21,7 +21,7 @@ treeValueCount(a,  6); --> 3
 * If node is null return 0, it means the target is not found.
 * Define a counter with initial value 0 and if node is equal to the target then increment the counter.
 * Call the function recursively for both left abd right children.
-* Add the count + left count + right count.
+* Add the count + left count + right count
 
 ```java
 public static <T> int treeValueCount(Node<T> root, T val){
